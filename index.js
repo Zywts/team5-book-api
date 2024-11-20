@@ -13,8 +13,126 @@ app.use((req, res, next) => {
 
 // In-memory book list
 let books = [
-    { id: 1, title: 'Book One', author: 'Author One' },
-    { id: 2, title: 'Book Two', author: 'Author Two' }
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "type": "Fiction",
+    "genre": "Literary Fiction",
+    "published": 1960
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "type": "Fiction",
+    "genre": "Dystopian",
+    "published": 1949
+  },
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "type": "Fiction",
+    "genre": "Romance",
+    "published": 1813
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "type": "Fiction",
+    "genre": "Literary Fiction",
+    "published": 1925
+  },
+  {
+    "id": 5,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "type": "Fiction",
+    "genre": "Adventure",
+    "published": 1851
+  },
+  {
+    "id": 6,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "type": "Fiction",
+    "genre": "Historical Fiction",
+    "published": 1869
+  },
+  {
+    "id": 7,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "type": "Fiction",
+    "genre": "Literary Fiction",
+    "published": 1951
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "published": 1937
+  },
+  {
+    "id": 9,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "published": 1954
+  },
+  {
+    "id": 10,
+    "title": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "published": 1950
+  },
+  {
+    "id": 11,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "type": "Fiction",
+    "genre": "Young Adult Dystopian",
+    "published": 2008
+  },
+  {
+    "id": 12,
+    "title": "Percy Jackson and the Olympians",
+    "author": "Rick Riordan",
+    "type": "Fiction",
+    "genre": "Young Adult Fantasy",
+    "published": 2005
+  },
+  {
+    "id": 13,
+    "title": "The Chronicles of Narnia",
+    "author": "C.S Lewis",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "published": 1950
+  },
+  {
+    "id": 14,
+    "title": "The Magicians",
+    "author": "Lev Grossman",
+    "type": "Fiction",
+    "genre": "Fantasy",
+    "published": 2009
+  },
+  {
+    "id": 15,
+    "title": "Artemis Fowl",
+    "author": "Eoin Colfer",
+    "type": "Fiction",
+    "genre": "Young Adult Fantasy",
+    "published": 2001
+  }
 ];
 
 // Health check endpoint
