@@ -167,11 +167,15 @@ app.post('/books', (req, res) => {
 app.put('/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
     const bookIndex = books.findIndex(book => book.id === bookId);
+    
     if (bookIndex !== -1) {
         books[bookIndex] = {
             id: bookId,
             title: req.body.title,
-            author: req.body.author
+            author: req.body.author,
+            type: req.body.type,
+            genre: req.body.genre,
+            published: req.body.published
         };
         res.json(books[bookIndex]);
     } else {
