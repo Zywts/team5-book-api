@@ -154,7 +154,10 @@ app.post('/books', (req, res) => {
     const newBook = {
         id: books.length + 1,
         title: req.body.title,
-        author: req.body.author
+        author: req.body.author,
+        type: req.body.type,
+        genre: req.body.genre,
+        published: req.body.published
     };
     books.push(newBook);
     res.status(201).json(newBook);
