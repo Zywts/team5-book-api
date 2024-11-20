@@ -2,14 +2,29 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware to parse JSON
+// Middleware to parse JSON and handle CORS
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
 
 // In-memory book list
 let books = [
     { id: 1, title: 'Book One', author: 'Author One' },
     { id: 2, title: 'Book Two', author: 'Author Two' }
 ];
+
+// Health check endpoint
+app.get('/', (req, res) => {
+    res.json({
+        status: 'ok',
+        message: 'Books API is running',
+        timestamp: new Date()
+    });
+});
 
 // GET all books
 app.get('/books', (req, res) => {
@@ -31,7 +46,6 @@ app.post('/books', (req, res) => {
 app.put('/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
     const bookIndex = books.findIndex(book => book.id === bookId);
-
     if (bookIndex !== -1) {
         books[bookIndex] = {
             id: bookId,
@@ -48,7 +62,6 @@ app.put('/books/:id', (req, res) => {
 app.delete('/books/:id', (req, res) => {
     const bookId = parseInt(req.params.id);
     const bookIndex = books.findIndex(book => book.id === bookId);
-
     if (bookIndex !== -1) {
         books = books.filter(book => book.id !== bookId);
         res.json({ message: 'Book deleted' });
