@@ -11,12 +11,11 @@ app.use((req, res, next) => {
     next();
 });
 
-// In-memory book list
 let books = [
   {
     "id": 1,
     "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
+    "author": "Kirby Molina",
     "type": "Fiction",
     "genre": "Literary Fiction",
     "published": 1960
@@ -24,7 +23,7 @@ let books = [
   {
     "id": 2,
     "title": "1984",
-    "author": "George Orwell",
+    "author": "Kirby Molina",
     "type": "Fiction",
     "genre": "Dystopian",
     "published": 1949
@@ -32,7 +31,7 @@ let books = [
   {
     "id": 3,
     "title": "Pride and Prejudice",
-    "author": "Jane Austen",
+    "author": "Kirby Molina",
     "type": "Fiction",
     "genre": "Romance",
     "published": 1813
@@ -40,7 +39,7 @@ let books = [
   {
     "id": 4,
     "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
+    "author": "Kirby Molina",
     "type": "Fiction",
     "genre": "Literary Fiction",
     "published": 1925
@@ -48,7 +47,7 @@ let books = [
   {
     "id": 5,
     "title": "Moby-Dick",
-    "author": "Herman Melville",
+    "author": "Kirby Molina",
     "type": "Fiction",
     "genre": "Adventure",
     "published": 1851
@@ -56,7 +55,7 @@ let books = [
   {
     "id": 6,
     "title": "War and Peace",
-    "author": "Leo Tolstoy",
+    "author": "James Tapic",
     "type": "Fiction",
     "genre": "Historical Fiction",
     "published": 1869
@@ -64,7 +63,7 @@ let books = [
   {
     "id": 7,
     "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
+    "author": "James Tapic",
     "type": "Fiction",
     "genre": "Literary Fiction",
     "published": 1951
@@ -72,7 +71,7 @@ let books = [
   {
     "id": 8,
     "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
+    "author": "James Tapic",
     "type": "Fiction",
     "genre": "Fantasy",
     "published": 1937
@@ -80,7 +79,7 @@ let books = [
   {
     "id": 9,
     "title": "The Lord of the Rings",
-    "author": "J.R.R. Tolkien",
+    "author": "James Tapic",
     "type": "Fiction",
     "genre": "Fantasy",
     "published": 1954
@@ -88,7 +87,7 @@ let books = [
   {
     "id": 10,
     "title": "The Chronicles of Narnia",
-    "author": "C.S. Lewis",
+    "author": "James Tapic",
     "type": "Fiction",
     "genre": "Fantasy",
     "published": 1950
@@ -96,7 +95,7 @@ let books = [
   {
     "id": 11,
     "title": "The Hunger Games",
-    "author": "Suzanne Collins",
+    "author": "Melchezedek P. Mendoza",
     "type": "Fiction",
     "genre": "Young Adult Dystopian",
     "published": 2008
@@ -104,7 +103,7 @@ let books = [
   {
     "id": 12,
     "title": "Percy Jackson and the Olympians",
-    "author": "Rick Riordan",
+    "author": "Melchezedek P. Mendoza",
     "type": "Fiction",
     "genre": "Young Adult Fantasy",
     "published": 2005
@@ -112,7 +111,7 @@ let books = [
   {
     "id": 13,
     "title": "The Chronicles of Narnia",
-    "author": "C.S Lewis",
+    "author": "Melchezedek P. Mendoza",
     "type": "Fiction",
     "genre": "Fantasy",
     "published": 1950
@@ -120,7 +119,7 @@ let books = [
   {
     "id": 14,
     "title": "The Magicians",
-    "author": "Lev Grossman",
+    "author": "Melchezedek P. Mendoza",
     "type": "Fiction",
     "genre": "Fantasy",
     "published": 2009
@@ -128,7 +127,7 @@ let books = [
   {
     "id": 15,
     "title": "Artemis Fowl",
-    "author": "Eoin Colfer",
+    "author": "Melchezedek P. Mendoza",
     "type": "Fiction",
     "genre": "Young Adult Fantasy",
     "published": 2001
